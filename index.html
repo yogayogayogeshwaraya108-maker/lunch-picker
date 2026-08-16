@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今天午餐吃什麼？｜台灣午餐隨機抽籤</title>
+<meta name="description" content="不知道今天午餐吃什麼？從台灣常見的飯類、麵類、小吃、便當、丼飯、火鍋、速食、便利商店與各種台灣料理中隨機抽籤，快速決定今天吃什麼。">
+
+<!-- PLACEHOLDER：尚未購買正式網域，目前使用 example.com 佔位。正式購買網域後再替換成實際網址 -->
+<link rel="canonical" href="https://example.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:title" content="今天午餐吃什麼？｜台灣午餐隨機抽籤">
+<meta property="og:description" content="不知道今天午餐吃什麼？從台灣常見的飯類、麵類、小吃、便當、丼飯、火鍋、速食、便利商店與各種台灣料理中隨機抽籤，快速決定今天吃什麼。">
+<meta property="og:site_name" content="今天午餐吃什麼？">
+<!-- 之後可視需要加入 og:image 與 og:url -->
+
+<!-- 基本 JSON-LD 結構化資料 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "今天午餐吃什麼？",
+  "alternateName": "台灣午餐隨機抽籤",
+  "description": "不知道今天午餐吃什麼？從台灣常見的飯類、麵類、小吃、便當、丼飯、火鍋、速食、便利商店與各種台灣料理中隨機抽籤，快速決定今天吃什麼。",
+  "inLanguage": "zh-TW"
+}
+</script>
+
+<!-- GOOGLE ADSENSE VERIFICATION CODE -->
+<!-- Google AdSense 核准後，把 Google 提供的正式程式碼放在這裡。目前尚未申請，此處不含任何 publisher ID。 -->
+<!-- /GOOGLE ADSENSE VERIFICATION CODE -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@600;700;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF6EC;
+    --paper:#FFFFFF;
+    --beige:#F1E3C9;
+    --ink:#2E2620;
+    --ink-soft:#6B5F52;
+    --orange:#E8873A;
+    --orange-deep:#C0472B;
+    --mustard:#E3B23C;
+    --line:#E7D9BE;
+    --shadow: 0 10px 30px rgba(46,38,32,0.08);
+    --radius-lg: 26px;
+    --radius-md: 16px;
+    --radius-sm: 12px;
+  }
+
+  *{ box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Noto Sans TC', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height:1.7;
+    overflow-x:hidden;
+  }
+  img{ max-width:100%; }
+
+  h1,h2,h3{
+    font-family:'Noto Serif TC', serif;
+    font-weight:900;
+    line-height:1.3;
+    margin:0 0 .4em;
+    color:var(--ink);
+  }
+  h1{
+    font-size:clamp(1.5rem, 6.2vw, 2.6rem);
+    text-wrap:balance;
+  }
+  h2{
+    font-size:clamp(1.25rem, 5vw, 1.9rem);
+    text-wrap:balance;
+  }
+  h3{ font-size:clamp(1.05rem, 3vw, 1.2rem); font-weight:700; }
+  p{ margin:0 0 1em; color:var(--ink); }
+  a{ color:var(--orange-deep); }
+
+  .wrap{
+    max-width:820px;
+    margin:0 auto;
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-right));
+  }
+
+  /* Header - compact on mobile */
+  header.site-header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,246,236,0.94);
+    backdrop-filter: blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-row{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px max(22px, env(safe-area-inset-left));
+    max-width:820px; margin:0 auto;
+    gap:8px;
+  }
+  .brand{
+    font-family:'Noto Serif TC', serif;
+    font-weight:900;
+    font-size:1rem;
+    color:var(--ink);
+    text-decoration:none;
+    white-space:nowrap;
+  }
+  nav.main-nav{
+    display:flex; gap:2px;
+  }
+  nav.main-nav a{
+    text-decoration:none;
+    color:var(--ink-soft);
+    font-size:0.82rem;
+    font-weight:500;
+    padding:6px 8px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  nav.main-nav a:hover{ background:var(--beige); color:var(--ink); }
+
+  /* ---------- Core tool block: must appear first on mobile ---------- */
+  .tool-block{
+    padding:18px 0 0;
+  }
+  .tool-block .eyebrow{
+    display:block;
+    text-align:center;
+    font-size:0.72rem;
+    font-weight:700;
+    color:var(--orange-deep);
+    letter-spacing:.03em;
+    margin-bottom:6px;
+  }
+  .tool-block h1{
+    text-align:center;
+    margin-bottom:4px;
+  }
+  .tool-block p.subtitle{
+    text-align:center;
+    font-size:0.9rem;
+    color:var(--ink-soft);
+    max-width:420px;
+    margin:0 auto 16px;
+  }
+
+  /* Category row - horizontally scrollable on mobile, wraps on desktop */
+  .category-shell{
+    position:relative;
+    margin-bottom:12px;
+  }
+  .category-shell::after{
+    content:'';
+    position:absolute;
+    top:0; right:0; bottom:10px;
+    width:34px;
+    background:linear-gradient(to right, rgba(251,246,236,0), var(--cream) 65%);
+    pointer-events:none;
+    border-radius:0 12px 12px 0;
+  }
+  .category-scroll{
+    display:flex;
+    gap:8px;
+    overflow-x:auto;
+    padding:2px 2px 10px;
+    scrollbar-width:thin;
+    -webkit-overflow-scrolling:touch;
+  }
+  .category-scroll::-webkit-scrollbar{ height:5px; }
+  .category-scroll::-webkit-scrollbar-thumb{ background:var(--line); border-radius:10px; }
+  .chip{
+    flex:0 0 auto;
+    font-family:'Noto Sans TC', sans-serif;
+    font-size:0.85rem;
+    font-weight:500;
+    padding:9px 15px;
+    border-radius:999px;
+    border:1.5px solid var(--line);
+    background:var(--paper);
+    color:var(--ink-soft);
+    cursor:pointer;
+    white-space:nowrap;
+    transition: all .15s ease;
+  }
+  .chip.active{
+    background:var(--orange);
+    border-color:var(--orange);
+    color:#fff;
+  }
+  .chip:hover{ border-color:var(--orange); color:var(--orange-deep); }
+
+  /* Draw card */
+  .draw-stage{
+    background:var(--paper);
+    border-radius:var(--radius-lg);
+    box-shadow:var(--shadow);
+    padding:28px 22px 26px;
+    max-width:440px;
+    width:100%;
+    margin:0 auto;
+    border:1px solid var(--line);
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .result-visual{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:2px;
+    line-height:1;
+  }
+  .visual-emoji{
+    font-size:clamp(3.4rem, 13vw, 4.6rem);
+    line-height:1;
+    display:inline-block;
+  }
+  .result-name{
+    font-family:'Noto Serif TC', serif;
+    font-weight:900;
+    font-size:clamp(1.9rem, 8vw, 2.6rem);
+    color:var(--ink);
+    margin:4px auto 6px;
+    min-height:1.3em;
+    max-width:100%;
+    width:100%;
+    word-break:break-word;
+    text-align:center;
+  }
+  .result-tagline{
+    color:var(--ink-soft);
+    font-size:0.9rem;
+    margin:0 auto 20px;
+    text-align:center;
+    width:100%;
+  }
+  .result-pop{
+    animation: popIn .4s cubic-bezier(.2,1.4,.4,1);
+  }
+  @keyframes popIn{
+    0%{ transform:scale(.8); opacity:0; }
+    60%{ transform:scale(1.04); opacity:1; }
+    100%{ transform:scale(1); }
+  }
+  .result-name.spinning{ animation: flicker .09s linear infinite; }
+  @keyframes flicker{
+    from{ opacity:1; } to{ opacity:.7; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .result-pop{ animation:none; }
+    .result-name.spinning{ animation:none; }
+  }
+
+  .draw-btn{
+    font-family:'Noto Sans TC', sans-serif;
+    font-size:1.1rem;
+    font-weight:700;
+    color:#fff;
+    background: linear-gradient(135deg, var(--orange), var(--orange-deep));
+    border:none;
+    border-radius:999px;
+    padding:17px 26px;
+    width:100%;
+    cursor:pointer;
+    box-shadow: 0 8px 20px rgba(192,71,43,0.28);
+    transition: transform .12s ease, box-shadow .12s ease;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:8px;
+  }
+  .draw-btn:hover{ transform:translateY(-2px); box-shadow: 0 12px 24px rgba(192,71,43,0.34); }
+  .draw-btn:active{ transform:translateY(0); }
+  .draw-btn:disabled{ opacity:.7; cursor:default; transform:none; }
+
+  .empty-note{
+    color:var(--ink-soft);
+    font-size:0.85rem;
+    margin-top:12px;
+  }
+
+  /* Ad slots */
+  .ad-slot{
+    max-width:820px;
+    margin:28px auto;
+    padding:16px;
+    text-align:center;
+    border:1.5px dashed var(--line);
+    border-radius:var(--radius-sm);
+    color:var(--ink-soft);
+    font-size:0.78rem;
+    letter-spacing:.05em;
+    background:rgba(255,255,255,0.4);
+  }
+
+  /* Article */
+  .article-section{ padding:16px 0 6px; }
+  .article-section h2{ text-align:center; margin-bottom:20px; }
+  .article-body h3{ margin-top:1.6em; }
+  .article-body{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-md);
+    padding:24px 20px;
+  }
+
+  /* FAQ */
+  .faq-section{ padding:26px 0 6px; }
+  .faq-section h2{ text-align:center; margin-bottom:20px; }
+  details.faq-item{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-sm);
+    padding:15px 18px;
+    margin-bottom:9px;
+  }
+  details.faq-item summary{
+    cursor:pointer;
+    font-weight:700;
+    font-size:0.96rem;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:12px;
+  }
+  details.faq-item summary::-webkit-details-marker{ display:none; }
+  details.faq-item summary::after{
+    content:'+';
+    font-size:1.35rem;
+    color:var(--orange-deep);
+    flex-shrink:0;
+  }
+  details.faq-item[open] summary::after{ content:'−'; }
+  details.faq-item p{ margin:10px 0 2px; color:var(--ink-soft); font-size:0.9rem; }
+
+  /* Info sections: about / howto / privacy */
+  .info-section{ padding:26px 0 6px; }
+  .info-section .card{
+    background:var(--paper);
+    border:1px solid var(--line);
+    border-radius:var(--radius-md);
+    padding:24px 20px;
+  }
+  .info-section ol, .info-section ul{ padding-left:1.2em; color:var(--ink); }
+  .info-section li{ margin-bottom:.5em; }
+
+  /* Footer */
+  footer.site-footer{
+    margin-top:44px;
+    background:var(--ink);
+    color:#EFE6D6;
+    padding:34px 0 24px;
+  }
+  footer.site-footer .wrap{ text-align:center; }
+  footer.site-footer .foot-brand{
+    font-family:'Noto Serif TC', serif;
+    font-weight:900;
+    font-size:1.15rem;
+    color:#fff;
+    margin-bottom:4px;
+  }
+  footer.site-footer .foot-tagline{
+    color:#C9BEA8;
+    font-size:0.88rem;
+    margin-bottom:20px;
+  }
+  footer.site-footer nav{
+    display:flex;
+    justify-content:center;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+  }
+  footer.site-footer nav a{
+    color:#EFE6D6;
+    text-decoration:none;
+    font-size:0.88rem;
+    border-bottom:1px solid transparent;
+  }
+  footer.site-footer nav a:hover{ border-bottom-color:var(--orange); }
+  footer.site-footer .copyright{
+    color:#8B8071;
+    font-size:0.78rem;
+  }
+
+  section[id]{ scroll-margin-top:70px; }
+
+  @media (min-width: 640px){
+    .wrap{ padding-left:24px; padding-right:24px; }
+    .nav-row{ padding:14px 24px; }
+    nav.main-nav a{ font-size:0.92rem; padding:8px 12px; }
+    .tool-block{ padding:34px 0 0; }
+    .category-scroll{ flex-wrap:wrap; overflow-x:visible; justify-content:center; }
+    .category-shell::after{ display:none; }
+    .draw-stage{ padding:40px 34px 36px; }
+    .result-name{ font-size:2.3rem; }
+    .article-body{ padding:32px 40px; }
+    .info-section .card{ padding:30px 36px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-row">
+    <a href="#home" class="brand">🍱 今天午餐吃什麼？</a>
+    <nav class="main-nav">
+      <a href="#tips">選餐技巧</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ 核心工具區：手機第一畫面就要看到 ============ -->
+  <section id="home" class="tool-block wrap">
+    <span class="eyebrow">免費・不用註冊・專為台灣午餐設計</span>
+    <h1>今天午餐吃什麼？</h1>
+    <p class="subtitle">選分類、按下按鈕，今天吃什麼交給我們決定！</p>
+
+    <div class="category-shell">
+      <div class="category-scroll" id="category-row" role="group" aria-label="選擇料理分類"></div>
+    </div>
+
+    <div class="draw-stage" id="draw-stage">
+      <div class="result-visual" id="result-visual" aria-hidden="true"></div>
+      <div class="result-name" id="result-name">準備好了嗎？</div>
+      <p class="result-tagline" id="result-tagline">按下按鈕，讓我們幫你決定！</p>
+      <button class="draw-btn" id="draw-btn">🎲 幫我決定今天吃什麼！</button>
+      <p class="empty-note" id="empty-note" style="display:none;">這個分類目前沒有資料，請換一個分類試試看。</p>
+    </div>
+  </section>
+
+  <!-- GOOGLE ADSENSE SLOT 1 -->
+  <!-- 核准後在這裡加入 Google AdSense 提供的正式廣告程式碼 -->
+  <div class="wrap"><div class="ad-slot">Advertisement</div></div>
+  <!-- /GOOGLE ADSENSE SLOT 1 -->
+
+  <section id="tips" class="article-section wrap">
+    <h2>每天都不知道午餐吃什麼？幾種簡單的選餐方法</h2>
+    <div class="article-body">
+      <p>幾乎每個上班族、學生，甚至是在家工作的人，每天中午都會遇到同一個問題：「午餐到底要吃什麼？」這個問題聽起來很小，但如果每天都要重新想一次，久了其實會讓人有點疲乏，甚至比早上決定穿什麼衣服還要困擾。這種「選擇疲勞」是真實存在的，尤其是在附近餐廳選項很多、外送平台品項又更多的情況下，選項太多反而讓人更難決定。</p>
+
+      <h3>先想清楚今天的預算</h3>
+      <p>選午餐最實際的第一步，其實是先想好今天想花多少錢。如果這幾天花費比較多，可以優先考慮便利商店的飯糰、便當，或是平價的麵食、小吃，價格通常比較容易掌握。如果剛好想犒賞自己，或是難得和同事、朋友一起吃飯，就可以把預算放寬，選擇火鍋、連鎖餐廳或是比較正式一點的定食料理。把預算先定下來，能少掉一半的猶豫時間。</p>
+
+      <h3>依照心情決定，也是很合理的方式</h3>
+      <p>除了預算，心情其實也會大大影響今天想吃什麼。天氣冷的時候，很多人會特別想喝一碗熱湯，牛肉麵、火鍋、麵線都是不錯的選擇；天氣熱的時候，涼麵、丼飯或是清爽一點的日式料理反而更吸引人。如果這幾天工作壓力比較大，吃一份自己喜歡的鹹酥雞或是喜歡的速食，也是很正常、很值得被理解的選擇，不需要有罪惡感。</p>
+
+      <h3>避免每天吃一樣的東西</h3>
+      <p>很多人會有固定去的那幾家店、固定點的那幾道菜，久了容易吃膩，也比較難攝取到多元的食物種類。這時候不妨刻意跳出平常的選擇範圍，例如平常都吃麵類，這週可以刻意換成飯類或日式定食；平常都吃便利商店，這週可以嘗試附近的小吃店或連鎖品牌餐廳。透過刻意輪替菜色，除了新鮮感之外，也比較容易吃得均衡。</p>
+
+      <h3>不想每次都自己想，那就用隨機抽籤</h3>
+      <p>如果連「今天要用預算選還是用心情選」都懶得想，其實最簡單的方式就是交給隨機抽籤來決定。先選一個大方向的分類，例如麵類、日式、素食、連鎖品牌，接著按下抽籤按鈕，讓系統直接幫你決定。這種方式的好處是完全不用花腦力思考，而且因為每次結果不同，也能間接幫你嘗試平常比較少選的類型，避免一直吃相同的東西。</p>
+
+      <h3>台灣常見的午餐選擇有哪些</h3>
+      <p>台灣的午餐選項其實非常豐富，從常見的滷肉飯、雞肉飯、排骨飯，到各式各樣的麵食如牛肉麵、鍋燒意麵、乾麵；還有便利商店的飯糰、便當、三明治，速度快又方便；喜歡吃辣、吃重口味的人，也可以選擇麻辣鍋或鹹酥雞這類小吃；如果想吃連鎖品牌，八方雲集、三商巧福、瓦城這類選項也都很常見。選項多到有時候反而很難決定，這也是為什麼很多人會需要一個工具，快速幫忙做出選擇。</p>
+
+      <h3>不想吃太油的時候，可以怎麼選</h3>
+      <p>如果最近吃得比較油膩，或是單純想吃清爽一點，可以優先考慮日式定食、丼飯、清燙類的小吃，或是搭配湯品的簡單飯類、麵類，盡量避開油炸、重口味的選項。點餐的時候，也可以請店家少油、少醬，或是主動選擇清蒸、水煮類的配菜，都是讓這一餐吃得更清爽的簡單方法。</p>
+
+      <h3>素食者也能輕鬆決定</h3>
+      <p>對於吃素的朋友來說，選午餐常常比一般人更花時間，因為要先確認哪些店家、哪些品項真的適合。這種時候可以直接鎖定素食分類，從素食便當、素食麵、素食自助餐這類選項中挑選，省去一家一家確認的麻煩。平常也可以多留意住家或公司附近有哪些素食友善的店家，把常去的幾間記下來，之後選擇會更快。</p>
+
+      <p>不管是用預算、用心情，還是乾脆交給隨機抽籤，重點都是讓「今天午餐吃什麼」這件小事，不要變成每天都要重新煩惱一次的負擔。如果想不到，就直接往上滑，按一下抽籤按鈕，讓今天的午餐簡單一點決定就好。</p>
+    </div>
+  </section>
+
+  <!-- GOOGLE ADSENSE SLOT 2 -->
+  <!-- 核准後在這裡加入 Google AdSense 提供的正式廣告程式碼 -->
+  <div class="wrap"><div class="ad-slot">Advertisement</div></div>
+  <!-- /GOOGLE ADSENSE SLOT 2 -->
+
+  <section id="faq" class="faq-section wrap">
+    <h2>常見問題 FAQ</h2>
+
+    <details class="faq-item">
+      <summary>這個午餐抽籤器免費嗎？</summary>
+      <p>可以免費使用，不需要註冊帳號。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>只能抽台灣料理嗎？</summary>
+      <p>是的，這個網站專注在台灣常見的午餐選擇，包含飯類、麵類、丼飯、小吃、餃類、早餐、便當、火鍋、速食、便利商店、各國風味與連鎖品牌等分類。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>抽到不想吃的怎麼辦？</summary>
+      <p>再抽一次即可，系統也會盡量避免連續兩次抽到完全相同的結果。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>可以用手機嗎？</summary>
+      <p>可以，網站以手機使用為優先設計，打開網站就能直接看到分類與抽籤按鈕，按鈕大小也特別為手指點擊調整過。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>抽籤結果是真的餐廳嗎？</summary>
+      <p>不是。這個工具是隨機提供餐點或品牌建議，不代表特定分店，也不保證附近一定有該選項。</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>為什麼結果會抽到連鎖品牌名稱？</summary>
+      <p>因為許多人決定午餐時，想到的常常就是品牌名稱，例如麥當勞、丹丹漢堡、八方雲集，所以這個工具也把常見連鎖品牌納入抽籤範圍，讓結果更貼近真實生活中的選擇。</p>
+    </details>
+  </section>
+
+  <section id="about" class="info-section wrap">
+    <h2>關於本站</h2>
+    <div class="card">
+      <p>「今天午餐吃什麼？」是一個單純的免費隨機選餐工具，專注在台灣常見的午餐選擇，目標是幫助每天都在煩惱午餐要吃什麼的人，快速做出決定。網站不需要註冊、不需要登入，所有抽籤功能都在瀏覽器裡直接完成，不會蒐集或上傳任何個人資料。</p>
+    </div>
+  </section>
+
+  <section id="howto" class="info-section wrap">
+    <h2>使用方法</h2>
+    <div class="card">
+      <ol>
+        <li>從分類列中選一個想要的類型，例如麵類、日式、素食、連鎖品牌，或選擇「全部」。</li>
+        <li>按下「🎲 幫我決定今天吃什麼！」按鈕。</li>
+        <li>畫面會顯示隨機抽出的餐點或品牌，就是今天的午餐建議。</li>
+        <li>不滿意的話，可以再按一次按鈕重新抽籤。</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="privacy" class="info-section wrap">
+    <h2>隱私權政策</h2>
+    <div class="card">
+      <p>本網站目前主要提供前端隨機選餐功能，沒有會員登入、帳號系統，也沒有後端資料庫，因此不會蒐集、儲存或處理任何使用者的個人資料。所有的抽籤邏輯都是在使用者的瀏覽器中運算完成，資料不會被傳送到任何伺服器。</p>
+      <p>本網站目前尚未啟用 Google AdSense 或其他廣告服務。未來若啟用 Google AdSense、Google Analytics 或其他第三方服務，這些服務可能會透過 Cookie 或類似技術蒐集匿名的使用資訊（例如瀏覽器類型、造訪頁面等），屆時本頁面將同步更新，說明所使用的第三方服務內容與相關 Cookie 政策。</p>
+      <p>如果對本站的隱私權政策有任何疑問，歡迎透過網站更新後提供的聯絡方式與我們聯繫。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-brand">今天午餐吃什麼？</div>
+    <div class="foot-tagline">免費台灣午餐隨機抽籤工具</div>
+    <nav>
+      <a href="#about">關於本站</a>
+      <a href="#howto">使用說明</a>
+      <a href="#faq">FAQ</a>
+      <a href="#privacy">隱私權政策</a>
+    </nav>
+    <!-- GOOGLE ADSENSE SLOT 3 -->
+    <!-- 核准後在這裡加入 Google AdSense 提供的正式廣告程式碼 -->
+    <div class="ad-slot" style="border-color:#4a4236; color:#C9BEA8;">Advertisement</div>
+    <!-- /GOOGLE ADSENSE SLOT 3 -->
+    <div class="copyright">© 2026 今天午餐吃什麼？ 版權所有。</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- 分類資料 ----------
+
+  var categories = [
+    { key:'all', label:'全部' },
+    { key:'rice', label:'飯類' },
+    { key:'noodle', label:'麵類' },
+    { key:'donburi', label:'丼飯' },
+    { key:'snack', label:'小吃' },
+    { key:'dumpling', label:'餃類' },
+    { key:'breakfast', label:'早餐' },
+    { key:'bento', label:'便當' },
+    { key:'hotpot', label:'火鍋' },
+    { key:'fastfood', label:'速食' },
+    { key:'convenience', label:'便利商店' },
+    { key:'japanese', label:'日式' },
+    { key:'korean', label:'韓式' },
+    { key:'chinese', label:'中式' },
+    { key:'taiwanese', label:'台式' },
+    { key:'veg', label:'素食' },
+    { key:'brand', label:'連鎖品牌' }
+  ];
+
+  // ---------- 食物資料（台灣專用，200+ 筆） ----------
+
+  var foods = [
+    // 飯類
+    { name:'滷肉飯', cat:'rice', icon:'🍚' },
+    { name:'雞肉飯', cat:'rice', icon:'🍗' },
+    { name:'控肉飯', cat:'rice', icon:'🥩' },
+    { name:'焢肉飯', cat:'rice', icon:'🥓' },
+    { name:'排骨飯', cat:'rice', icon:'🍖' },
+    { name:'雞腿飯', cat:'rice', icon:'🍗' },
+    { name:'雞排飯', cat:'rice', icon:'🍗' },
+    { name:'三寶飯', cat:'rice', icon:'🍱' },
+    { name:'燒肉飯', cat:'rice', icon:'🥩' },
+    { name:'叉燒飯', cat:'rice', icon:'🍖' },
+    { name:'魯雞腿飯', cat:'rice', icon:'🍲' },
+    { name:'魚排飯', cat:'rice', icon:'🐟' },
+    { name:'魚肚飯', cat:'rice', icon:'🐟' },
+    { name:'鯖魚飯', cat:'rice', icon:'🎣' },
+    { name:'香腸飯', cat:'rice', icon:'🌭' },
+    { name:'炒飯', cat:'rice', icon:'🍚' },
+    { name:'蛋炒飯', cat:'rice', icon:'🍳' },
+    { name:'肉絲炒飯', cat:'rice', icon:'🍚' },
+    { name:'火腿蛋炒飯', cat:'rice', icon:'🍳' },
+    { name:'揚州炒飯', cat:'rice', icon:'🍤' },
+    { name:'蝦仁炒飯', cat:'rice', icon:'🦐' },
+    { name:'咖哩飯', cat:'rice', icon:'🍛' },
+    { name:'咖哩雞飯', cat:'rice', icon:'🍛' },
+    { name:'咖哩豬排飯', cat:'rice', icon:'🐖' },
+    { name:'蛋包飯', cat:'rice', icon:'🍳' },
+
+    // 丼飯
+    { name:'親子丼', cat:'donburi', icon:'🥚' },
+    { name:'牛丼', cat:'donburi', icon:'🥩' },
+    { name:'豬排丼', cat:'donburi', icon:'🐷' },
+    { name:'唐揚雞丼', cat:'donburi', icon:'🍗' },
+    { name:'鰻魚丼', cat:'donburi', icon:'🐟' },
+    { name:'海鮮丼', cat:'donburi', icon:'🦀' },
+    { name:'生魚片丼', cat:'donburi', icon:'🍣' },
+    { name:'炙燒丼', cat:'donburi', icon:'🔥' },
+    { name:'燒肉丼', cat:'donburi', icon:'🥩' },
+    { name:'泡菜豬肉丼', cat:'donburi', icon:'🌶️' },
+    { name:'天丼', cat:'donburi', icon:'🍤' },
+    { name:'咖哩豬排丼', cat:'donburi', icon:'🍛' },
+
+    // 麵類
+    { name:'牛肉麵', cat:'noodle', icon:'🍜' },
+    { name:'紅燒牛肉麵', cat:'noodle', icon:'🌶️' },
+    { name:'清燉牛肉麵', cat:'noodle', icon:'🍲' },
+    { name:'牛肉湯', cat:'noodle', icon:'🥣' },
+    { name:'牛肉湯麵', cat:'noodle', icon:'🍜' },
+    { name:'乾麵', cat:'noodle', icon:'🍝' },
+    { name:'麻醬麵', cat:'noodle', icon:'🥜' },
+    { name:'炸醬麵', cat:'noodle', icon:'🥡' },
+    { name:'陽春麵', cat:'noodle', icon:'🍜' },
+    { name:'榨菜肉絲麵', cat:'noodle', icon:'🥬' },
+    { name:'肉燥麵', cat:'noodle', icon:'🍜' },
+    { name:'餛飩麵', cat:'noodle', icon:'🥟' },
+    { name:'魚丸麵', cat:'noodle', icon:'🐟' },
+    { name:'貢丸麵', cat:'noodle', icon:'🍡' },
+    { name:'米粉湯', cat:'noodle', icon:'🥣' },
+    { name:'米粉炒', cat:'noodle', icon:'🍝' },
+    { name:'炒米粉', cat:'noodle', icon:'🍝' },
+    { name:'粄條', cat:'noodle', icon:'🍜' },
+    { name:'客家粄條', cat:'noodle', icon:'🍜' },
+    { name:'板條湯', cat:'noodle', icon:'🍲' },
+    { name:'意麵', cat:'noodle', icon:'🍝' },
+    { name:'台南意麵', cat:'noodle', icon:'🍝' },
+    { name:'汕頭麵', cat:'noodle', icon:'🍜' },
+    { name:'刀削麵', cat:'noodle', icon:'🔪' },
+    { name:'拉麵', cat:'noodle', icon:'🍜' },
+    { name:'烏龍麵', cat:'noodle', icon:'🍜' },
+    { name:'鍋燒意麵', cat:'noodle', icon:'🍲' },
+    { name:'鍋燒雞絲麵', cat:'noodle', icon:'🍲' },
+    { name:'鍋燒海鮮麵', cat:'noodle', icon:'🦐' },
+    { name:'鍋燒烏龍麵', cat:'noodle', icon:'🍲' },
+
+    // 小吃（含湯品、羹類）
+    { name:'蚵仔煎', cat:'snack', icon:'🦪' },
+    { name:'蚵仔麵線', cat:'snack', icon:'🦪' },
+    { name:'大腸麵線', cat:'snack', icon:'🍜' },
+    { name:'臭豆腐', cat:'snack', icon:'🧊' },
+    { name:'鹽酥雞', cat:'snack', icon:'🍗' },
+    { name:'雞排', cat:'snack', icon:'🍗' },
+    { name:'炸雞排', cat:'snack', icon:'🍗' },
+    { name:'鹹酥雞', cat:'snack', icon:'🍤' },
+    { name:'滷味', cat:'snack', icon:'🍲' },
+    { name:'炸甜不辣', cat:'snack', icon:'🍥' },
+    { name:'甜不辣', cat:'snack', icon:'🍥' },
+    { name:'黑輪', cat:'snack', icon:'🌭' },
+    { name:'關東煮', cat:'snack', icon:'🍢' },
+    { name:'蔥油餅', cat:'snack', icon:'🫓' },
+    { name:'蛋餅', cat:'snack', icon:'🥞' },
+    { name:'飯糰', cat:'snack', icon:'🍙' },
+    { name:'燒餅', cat:'snack', icon:'🫓' },
+    { name:'油條', cat:'snack', icon:'🥖' },
+    { name:'刈包', cat:'snack', icon:'🥪' },
+    { name:'大腸包小腸', cat:'snack', icon:'🌭' },
+    { name:'胡椒餅', cat:'snack', icon:'🥮' },
+    { name:'蘿蔔糕', cat:'snack', icon:'🍘' },
+    { name:'芋頭糕', cat:'snack', icon:'🍘' },
+    { name:'碗粿', cat:'snack', icon:'🍮' },
+    { name:'筒仔米糕', cat:'snack', icon:'🍚' },
+    { name:'肉粽', cat:'snack', icon:'🫔' },
+    { name:'鹹粽', cat:'snack', icon:'🫔' },
+    { name:'糯米腸', cat:'snack', icon:'🌭' },
+    { name:'豬血糕', cat:'snack', icon:'🍢' },
+    { name:'雞蛋糕', cat:'snack', icon:'🧇' },
+    { name:'車輪餅', cat:'snack', icon:'🥮' },
+    { name:'肉圓', cat:'snack', icon:'🍡' },
+    { name:'彰化肉圓', cat:'snack', icon:'🍡' },
+    { name:'北斗肉圓', cat:'snack', icon:'🍡' },
+    { name:'貢丸湯', cat:'snack', icon:'🥣' },
+    { name:'魚丸湯', cat:'snack', icon:'🐟' },
+    { name:'魷魚羹', cat:'snack', icon:'🦑' },
+    { name:'肉羹湯', cat:'snack', icon:'🥣' },
+    { name:'赤肉羹', cat:'snack', icon:'🍲' },
+    { name:'虱目魚湯', cat:'snack', icon:'🐟' },
+    { name:'魚皮湯', cat:'snack', icon:'🍲' },
+    { name:'蛤蜊湯', cat:'snack', icon:'🐚' },
+    { name:'四神湯', cat:'snack', icon:'🍵' },
+    { name:'排骨湯', cat:'snack', icon:'🍖' },
+    { name:'酸辣湯', cat:'snack', icon:'🌶️' },
+    { name:'蛋花湯', cat:'snack', icon:'🥚' },
+
+    // 餃類
+    { name:'水餃', cat:'dumpling', icon:'🥟' },
+    { name:'鍋貼', cat:'dumpling', icon:'🥟' },
+    { name:'蒸餃', cat:'dumpling', icon:'🥟' },
+    { name:'小籠包', cat:'dumpling', icon:'🥟' },
+    { name:'生煎包', cat:'dumpling', icon:'🥠' },
+    { name:'韭菜盒子', cat:'dumpling', icon:'🫓' },
+    { name:'酸菜水餃', cat:'dumpling', icon:'🥟' },
+    { name:'蝦仁水餃', cat:'dumpling', icon:'🦐' },
+    { name:'煎餃', cat:'dumpling', icon:'🥟' },
+    { name:'鮮肉小籠包', cat:'dumpling', icon:'🥟' },
+
+    // 早餐
+    { name:'鐵板麵', cat:'breakfast', icon:'🍝' },
+    { name:'火腿蛋', cat:'breakfast', icon:'🍳' },
+    { name:'培根蛋', cat:'breakfast', icon:'🥓' },
+    { name:'起司蛋餅', cat:'breakfast', icon:'🧀' },
+    { name:'玉米蛋餅', cat:'breakfast', icon:'🌽' },
+    { name:'肉鬆蛋餅', cat:'breakfast', icon:'🥞' },
+    { name:'蘿蔔糕加蛋', cat:'breakfast', icon:'🥚' },
+    { name:'漢堡蛋', cat:'breakfast', icon:'🍔' },
+    { name:'吐司', cat:'breakfast', icon:'🍞' },
+    { name:'厚片吐司', cat:'breakfast', icon:'🍞' },
+    { name:'三明治', cat:'breakfast', icon:'🥪' },
+    { name:'總匯三明治', cat:'breakfast', icon:'🥪' },
+
+    // 便當
+    { name:'便當', cat:'bento', icon:'🍱' },
+    { name:'排骨便當', cat:'bento', icon:'🍖' },
+    { name:'雞腿便當', cat:'bento', icon:'🍗' },
+    { name:'魚排便當', cat:'bento', icon:'🐟' },
+    { name:'焢肉便當', cat:'bento', icon:'🥩' },
+    { name:'雞排便當', cat:'bento', icon:'🍗' },
+    { name:'爌肉便當', cat:'bento', icon:'🥓' },
+    { name:'烤雞腿便當', cat:'bento', icon:'🍗' },
+    { name:'滷雞腿便當', cat:'bento', icon:'🍲' },
+    { name:'炸排骨便當', cat:'bento', icon:'🍖' },
+
+    // 火鍋
+    { name:'麻辣鍋', cat:'hotpot', icon:'🌶️' },
+    { name:'涮涮鍋', cat:'hotpot', icon:'🍲' },
+    { name:'個人小火鍋', cat:'hotpot', icon:'🍲' },
+    { name:'石頭火鍋', cat:'hotpot', icon:'🍲' },
+    { name:'酸菜白肉鍋', cat:'hotpot', icon:'🥬' },
+    { name:'鴛鴦鍋', cat:'hotpot', icon:'🍲' },
+    { name:'海鮮鍋', cat:'hotpot', icon:'🦐' },
+    { name:'牛肉鍋', cat:'hotpot', icon:'🥩' },
+    { name:'豬肉鍋', cat:'hotpot', icon:'🐖' },
+    { name:'羊肉爐', cat:'hotpot', icon:'🐑' },
+
+    // 速食 / 連鎖速食品牌
+    { name:'麥當勞', cat:'fastfood', icon:'🍔' },
+    { name:'肯德基', cat:'fastfood', icon:'🍗' },
+    { name:'摩斯漢堡', cat:'fastfood', icon:'🍔' },
+    { name:'漢堡王', cat:'fastfood', icon:'🍔' },
+    { name:'丹丹漢堡', cat:'fastfood', icon:'🍔' },
+    { name:'21風味館', cat:'fastfood', icon:'🍗' },
+    { name:'拿坡里', cat:'fastfood', icon:'🍕' },
+    { name:'必勝客', cat:'fastfood', icon:'🍕' },
+    { name:'達美樂', cat:'fastfood', icon:'🍕' },
+    { name:'SUBWAY', cat:'fastfood', icon:'🥪' },
+
+    // 便利商店（品牌 + 常見午餐品項）
+    { name:'7-ELEVEN', cat:'convenience', icon:'🏪' },
+    { name:'全家便利商店', cat:'convenience', icon:'🏪' },
+    { name:'OK mart', cat:'convenience', icon:'🏪' },
+    { name:'萊爾富', cat:'convenience', icon:'🏪' },
+    { name:'超商御飯糰', cat:'convenience', icon:'🍙' },
+    { name:'超商便當', cat:'convenience', icon:'🍱' },
+    { name:'超商微波義大利麵', cat:'convenience', icon:'🍝' },
+    { name:'超商關東煮', cat:'convenience', icon:'🍢' },
+    { name:'超商茶葉蛋', cat:'convenience', icon:'🥚' },
+    { name:'超商三明治', cat:'convenience', icon:'🥪' },
+    { name:'超商飯糰', cat:'convenience', icon:'🍙' },
+    { name:'超商炒飯', cat:'convenience', icon:'🍚' },
+    { name:'超商燴飯', cat:'convenience', icon:'🍛' },
+    { name:'超商沙拉', cat:'convenience', icon:'🥗' },
+    { name:'超商地瓜', cat:'convenience', icon:'🍠' },
+    { name:'超商熱狗', cat:'convenience', icon:'🌭' },
+
+    // 日式
+    { name:'壽司', cat:'japanese', icon:'🍣' },
+    { name:'天婦羅', cat:'japanese', icon:'🍤' },
+    { name:'味噌湯定食', cat:'japanese', icon:'🍲' },
+    { name:'豬排定食', cat:'japanese', icon:'🐷' },
+    { name:'唐揚雞定食', cat:'japanese', icon:'🍗' },
+    { name:'燒肉定食', cat:'japanese', icon:'🥩' },
+    { name:'可樂餅定食', cat:'japanese', icon:'🥔' },
+    { name:'炸蝦定食', cat:'japanese', icon:'🦐' },
+
+    // 韓式
+    { name:'韓式炒年糕', cat:'korean', icon:'🌶️' },
+    { name:'部隊鍋', cat:'korean', icon:'🍲' },
+    { name:'石鍋拌飯', cat:'korean', icon:'🍚' },
+    { name:'韓式炸雞', cat:'korean', icon:'🍗' },
+    { name:'泡菜鍋', cat:'korean', icon:'🥬' },
+    { name:'韓式烤肉', cat:'korean', icon:'🥩' },
+    { name:'雜菜冬粉', cat:'korean', icon:'🍜' },
+    { name:'紫菜飯捲', cat:'korean', icon:'🍙' },
+
+    // 中式
+    { name:'麻婆豆腐飯', cat:'chinese', icon:'🌶️' },
+    { name:'宮保雞丁飯', cat:'chinese', icon:'🍗' },
+    { name:'京醬肉絲', cat:'chinese', icon:'🥩' },
+    { name:'糖醋里肌', cat:'chinese', icon:'🍖' },
+    { name:'魚香茄子飯', cat:'chinese', icon:'🍆' },
+    { name:'回鍋肉', cat:'chinese', icon:'🥓' },
+    { name:'乾煸四季豆', cat:'chinese', icon:'🫛' },
+    { name:'螞蟻上樹', cat:'chinese', icon:'🍜' },
+
+    // 台式（家常料理）
+    { name:'三杯雞', cat:'taiwanese', icon:'🍗' },
+    { name:'滷豆腐', cat:'taiwanese', icon:'🍲' },
+    { name:'客家小炒', cat:'taiwanese', icon:'🥓' },
+    { name:'薑母鴨', cat:'taiwanese', icon:'🦆' },
+    { name:'鹹水雞', cat:'taiwanese', icon:'🍗' },
+    { name:'白斬雞', cat:'taiwanese', icon:'🐔' },
+    { name:'筍絲控肉', cat:'taiwanese', icon:'🥩' },
+    { name:'菜脯蛋', cat:'taiwanese', icon:'🍳' },
+
+    // 素食
+    { name:'素食便當', cat:'veg', icon:'🥗' },
+    { name:'素食麵', cat:'veg', icon:'🍜' },
+    { name:'素食自助餐', cat:'veg', icon:'🥦' },
+    { name:'素食滷味', cat:'veg', icon:'🍲' },
+    { name:'蔬食便當', cat:'veg', icon:'🥗' },
+    { name:'豆皮壽司', cat:'veg', icon:'🍣' },
+    { name:'涼拌豆腐', cat:'veg', icon:'🥗' },
+    { name:'炒青菜套餐', cat:'veg', icon:'🥬' },
+    { name:'素食咖哩飯', cat:'veg', icon:'🍛' },
+    { name:'素食水餃', cat:'veg', icon:'🥟' },
+
+    // 連鎖品牌（非速食類）
+    { name:'八方雲集', cat:'brand', icon:'🥟' },
+    { name:'四海遊龍', cat:'brand', icon:'🥟' },
+    { name:'三商巧福', cat:'brand', icon:'🍜' },
+    { name:'麥味登', cat:'brand', icon:'🥪' },
+    { name:'拉亞漢堡', cat:'brand', icon:'🍔' },
+    { name:'洪師父牛肉麵', cat:'brand', icon:'🍜' },
+    { name:'梁社漢排骨', cat:'brand', icon:'🍖' },
+    { name:'大戶屋', cat:'brand', icon:'🍚' },
+    { name:'和民', cat:'brand', icon:'🍶' },
+    { name:'涓豆腐', cat:'brand', icon:'🍲' },
+    { name:'開飯川食堂', cat:'brand', icon:'🌶️' },
+    { name:'點點心', cat:'brand', icon:'🥟' },
+    { name:'瓦城', cat:'brand', icon:'🍛' },
+    { name:'聚北海道昆布鍋', cat:'brand', icon:'🍲' },
+    { name:'肉次方', cat:'brand', icon:'🥩' },
+    { name:'石二鍋', cat:'brand', icon:'🍲' },
+    { name:'六扇門', cat:'brand', icon:'🍲' },
+    { name:'老先覺', cat:'brand', icon:'🍜' },
+    { name:'築間', cat:'brand', icon:'🍲' },
+    { name:'王品', cat:'brand', icon:'🥩' },
+    { name:'西堤', cat:'brand', icon:'🥩' },
+    { name:'陶板屋', cat:'brand', icon:'🥩' }
+  ];
+
+  // ---------- 抽籤前的思考角色 ----------
+
+  var IDLE_EMOJI = '🤔';
+
+  // ---------- 狀態 ----------
+
+  var state = {
+    category: 'all',
+    lastResultName: null
+  };
+
+  // ---------- DOM ----------
+
+  var categoryRow = document.getElementById('category-row');
+  var drawBtn = document.getElementById('draw-btn');
+  var resultVisual = document.getElementById('result-visual');
+  var resultName = document.getElementById('result-name');
+  var resultTagline = document.getElementById('result-tagline');
+  var emptyNote = document.getElementById('empty-note');
+
+  var spinTimer = null;
+
+  // ---------- 工具函式 ----------
+
+  function getPool(){
+    if(state.category === 'all'){ return foods; }
+    return foods.filter(function(f){ return f.cat === state.category; });
+  }
+
+  function pickRandom(pool){
+    if(pool.length === 0){ return null; }
+    if(pool.length === 1){ return pool[0]; }
+    var choice;
+    var guard = 0;
+    do{
+      choice = pool[Math.floor(Math.random() * pool.length)];
+      guard++;
+    } while(choice.name === state.lastResultName && guard < 20);
+    return choice;
+  }
+
+  function resetStage(){
+    clearTimers();
+    resultVisual.innerHTML = '<span class="visual-emoji" aria-hidden="true">' + IDLE_EMOJI + '</span>';
+    resultName.className = '';
+    resultName.textContent = '準備好了嗎？';
+    resultTagline.textContent = '按下按鈕，讓我們幫你決定！';
+    drawBtn.textContent = '🎲 幫我決定今天吃什麼！';
+    drawBtn.disabled = false;
+    state.lastResultName = null;
+  }
+
+  function clearTimers(){
+    if(spinTimer){ clearInterval(spinTimer); spinTimer = null; }
+  }
+
+  function renderCategories(){
+    categoryRow.innerHTML = '';
+    categories.forEach(function(c){
+      var btn = document.createElement('button');
+      btn.className = 'chip' + (c.key === state.category ? ' active' : '');
+      btn.textContent = c.label;
+      btn.setAttribute('data-key', c.key);
+      btn.addEventListener('click', function(){
+        state.category = c.key;
+        renderCategories();
+        resetStage();
+      });
+      categoryRow.appendChild(btn);
+    });
+  }
+
+  function runDraw(){
+    var pool = getPool();
+
+    if(pool.length === 0){
+      emptyNote.style.display = 'block';
+      return;
+    }
+    emptyNote.style.display = 'none';
+
+    clearTimers();
+    drawBtn.disabled = true;
+    resultName.className = 'spinning';
+    resultTagline.textContent = '抽籤中……';
+
+    var spinCount = 0;
+    var maxSpins = 9;
+
+    spinTimer = setInterval(function(){
+      var randomItem = pool[Math.floor(Math.random() * pool.length)];
+      resultVisual.innerHTML = '<span class="visual-emoji" aria-hidden="true">' + randomItem.icon + '</span>';
+      resultName.textContent = randomItem.name;
+      spinCount++;
+
+      if(spinCount >= maxSpins){
+        clearInterval(spinTimer);
+        spinTimer = null;
+        finishDraw(pool);
+      }
+    }, 85);
+  }
+
+  function finishDraw(pool){
+    var final = pickRandom(pool);
+    state.lastResultName = final.name;
+
+    resultVisual.innerHTML = '<span class="visual-emoji" aria-hidden="true">' + final.icon + '</span>';
+    resultName.className = 'result-pop';
+    resultName.textContent = final.name;
+    resultTagline.textContent = '今天就吃這個！';
+
+    drawBtn.textContent = '🎲 再抽一次';
+    drawBtn.disabled = false;
+  }
+
+  // ---------- 事件綁定 ----------
+
+  drawBtn.addEventListener('click', runDraw);
+
+  // ---------- 初始化 ----------
+
+  renderCategories();
+  resetStage();
+})();
+</script>
+
+</body>
+</html>
